@@ -1,0 +1,162 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  background-color: #050811;
+  color: #f1f5f9;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+:root[data-theme="light"] {
+  color-scheme: light;
+}
+
+/* Theme overrides for dynamic mode switching */
+[data-theme="light"] body,
+[data-theme="light"] .bg-neutral-950 {
+  background-color: #f8fafc !important;
+}
+
+[data-theme="light"] .bg-neutral-950\/50,
+[data-theme="light"] .bg-neutral-950\/60,
+[data-theme="light"] .bg-neutral-950\/80,
+[data-theme="light"] .bg-neutral-950\/85 {
+  background-color: rgba(248, 250, 252, 0.9) !important;
+}
+
+[data-theme="light"] .bg-neutral-900,
+[data-theme="light"] .bg-neutral-900\/60,
+[data-theme="light"] .bg-neutral-900\/70,
+[data-theme="light"] .bg-neutral-900\/80,
+[data-theme="light"] .bg-neutral-900\/90,
+[data-theme="light"] .bg-neutral-900\/95 {
+  background-color: #ffffff !important;
+  box-shadow: 0 4px 16px -2px rgba(15, 23, 42, 0.05);
+}
+
+[data-theme="light"] .text-neutral-100 {
+  color: #0f172a !important;
+}
+
+[data-theme="light"] .text-neutral-200 {
+  color: #1e293b !important;
+}
+
+[data-theme="light"] .text-neutral-300 {
+  color: #334155 !important;
+}
+
+[data-theme="light"] .text-neutral-400 {
+  color: #64748b !important;
+}
+
+[data-theme="light"] .border-neutral-800,
+[data-theme="light"] .border-neutral-800\/80,
+[data-theme="light"] .border-neutral-700,
+[data-theme="light"] .border-neutral-900 {
+  border-color: #e2e8f0 !important;
+}
+
+/* Midnight Navy overrides */
+[data-theme="midnight"] body,
+[data-theme="midnight"] .bg-neutral-950 {
+  background-color: #060c1d !important;
+}
+
+[data-theme="midnight"] .bg-neutral-900,
+[data-theme="midnight"] .bg-neutral-900\/60,
+[data-theme="midnight"] .bg-neutral-900\/70,
+[data-theme="midnight"] .bg-neutral-900\/80,
+[data-theme="midnight"] .bg-neutral-900\/90,
+[data-theme="midnight"] .bg-neutral-900\/95 {
+  background-color: #0d1630 !important;
+  border-color: #1e2d52 !important;
+}
+
+/* Cyber Violet overrides */
+[data-theme="cyber"] body,
+[data-theme="cyber"] .bg-neutral-950 {
+  background-color: #090514 !important;
+}
+
+[data-theme="cyber"] .bg-neutral-900,
+[data-theme="cyber"] .bg-neutral-900\/60,
+[data-theme="cyber"] .bg-neutral-900\/70,
+[data-theme="cyber"] .bg-neutral-900\/80,
+[data-theme="cyber"] .bg-neutral-900\/90,
+[data-theme="cyber"] .bg-neutral-900\/95 {
+  background-color: #130b26 !important;
+  border-color: #311854 !important;
+}
+
+/* Global Animations & Transitions */
+html {
+  scroll-behavior: smooth;
+}
+
+@keyframes floatSlow {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    opacity: 0.4;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.05);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+@keyframes beaconPing {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 12px rgba(16, 185, 129, 0);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0);
+  }
+}
+
+.animate-float-slow {
+  animation: floatSlow 5s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 3s ease-in-out infinite;
+}
+
+.animate-beacon-ping {
+  animation: beaconPing 2.5s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+.animate-shimmer {
+  background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.08) 50%, rgba(255,255,255,0) 100%);
+  background-size: 200% 100%;
+  animation: shimmer 2.5s infinite;
+}
+
