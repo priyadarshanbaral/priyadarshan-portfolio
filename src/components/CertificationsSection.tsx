@@ -98,7 +98,7 @@ export const CertificationsSection: React.FC = () => {
                 Candidate Value Proposition
               </div>
               <p className="text-xs text-neutral-300 leading-relaxed">
-                Priyadarshan brings hands-on full-stack development capability, an active internship, verified AI tooling credentials, and disciplined Git practices. Ready to onboard smoothly and start writing production code immediately.
+                Priyadarshan brings hands-on full-stack development capability, two engineering internships, verified AI tooling credentials, and disciplined Git practices. Ready to onboard smoothly and start writing production code immediately.
               </p>
             </div>
           </div>

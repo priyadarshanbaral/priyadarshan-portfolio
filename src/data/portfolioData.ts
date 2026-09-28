@@ -22,7 +22,7 @@ export const PERSONAL_INFO = {
   github: 'https://github.com/priyadarshanbaral',
   status: 'Open for Junior / Fresher Full Stack Roles',
   summary:
-    'Full Stack Developer with hands-on MERN stack experience (MongoDB, Express.js, React.js, Node.js) gained through a live internship and three end-to-end projects. Comfortable across the full request/response cycle — building responsive React interfaces, designing RESTful APIs in Express, and modeling data in MongoDB. Familiar with Git-based version control. Seeking a Junior/Fresher Full Stack Developer role to contribute production-ready code from day one.',
+    'Full Stack Developer with hands-on MERN stack experience (MongoDB, Express.js, React.js, Node.js) gained through two software engineering internships and three end-to-end projects. Comfortable across the full request/response cycle — building responsive React interfaces, designing RESTful APIs in Express, and modeling data in MongoDB. Familiar with Git-based version control. Seeking a Junior/Fresher Full Stack Developer role to contribute production-ready code from day one.',
   languages: [
     { name: 'English', proficiency: 'Professional' },
     { name: 'Hindi', proficiency: 'Professional' },
@@ -156,12 +156,30 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
 
 export const EXPERIENCES: ExperienceItem[] = [
   {
+    id: 'evatril-internship',
+    role: 'Full Stack Developer Intern',
+    company: 'Evatril Private Limited',
+    location: 'Bhubaneswar, Odisha',
+    period: 'September 2026 – Present',
+    current: true,
+    type: 'Internship',
+    description: [
+      'Selected as a Full Stack Developer Intern in the Tech Team, building production web modules across the client and server layers.',
+      'Working on full-stack feature delivery with a 3-month initial internship period, reporting into the Tech Head, Tridip Maharana.',
+      'Following company coding standards, source-code confidentiality policies, and structured performance-review cycles.',
+      'Committing to a 10:00 AM – 6:30 PM working schedule with an eye on technical quality, ownership, and delivery discipline.',
+    ],
+    skills: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'REST APIs', 'Git', 'Full Stack'],
+    offerLetterUrl: '/evatril-offer-letter.pdf',
+  },
+  {
     id: 'vidyavistara-internship',
     role: 'MERN Stack Developer Intern',
     company: 'Vidyavistara Institute',
     location: 'Bhubaneswar, Odisha',
-    period: 'January 2026 – Present',
-    current: true,
+    period: 'January 2026 – August 2026',
+    current: false,
+    type: 'Internship',
     description: [
       'Building full-stack web applications with React.js frontends integrated to Express.js/Node.js REST APIs and MongoDB data models.',
       'Collaborating with a team on real-world project modules using Git for version control and Agile-style task tracking.',
@@ -179,7 +197,7 @@ export const EDUCATION_LIST: EducationItem[] = [
     institution: 'NM Institute of Engineering and Technology',
     location: 'Bhubaneswar, Odisha',
     period: '2023 – 2027 (Ongoing)',
-    score: 'CGPA: 7.85 (up to 5th Semester)',
+    score: 'CGPA: 7.85 (up to 6th Semester)',
     current: true,
   },
   {

@@ -18,8 +18,10 @@ export interface ExperienceItem {
   location: string;
   period: string;
   current: boolean;
+  type?: 'Internship' | 'Full-time' | 'Freelance';
   description: string[];
   skills: string[];
+  offerLetterUrl?: string;
 }
 
 export interface EducationItem {

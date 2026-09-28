@@ -36,7 +36,7 @@ MERN Stack Full Stack Developer (Frontend & Backend)
 Bhubaneswar, Odisha, India | 8984054385 | priyadrshanbaral@gmail.com | linkedin.com/in/priyadarshan-baral | github.com/priyadarshanbaral
 
 PROFESSIONAL SUMMARY
-Full Stack Developer with hands-on MERN stack experience (MongoDB, Express.js, React.js, Node.js) gained through a live internship and three end-to-end projects. Comfortable across the full request/response cycle — building responsive React interfaces, designing RESTful APIs in Express, and modeling data in MongoDB. Familiar with Git-based version control. Seeking a Junior/Fresher Full Stack Developer role to contribute production-ready code from day one.
+Full Stack Developer with hands-on MERN stack experience (MongoDB, Express.js, React.js, Node.js) gained through two software engineering internships and three end-to-end projects. Comfortable across the full request/response cycle — building responsive React interfaces, designing RESTful APIs in Express, and modeling data in MongoDB. Familiar with Git-based version control. Seeking a Junior/Fresher Full Stack Developer role to contribute production-ready code from day one.
 
 SKILLS
 Languages: JavaScript, HTML, CSS
@@ -48,11 +48,17 @@ Deployment: Netlify
 Soft Skills: Communication, Teamwork, Problem Solving, Time Management, Adaptability
 
 INTERNSHIP EXPERIENCE
+Full Stack Developer Intern — Evatril Private Limited, Bhubaneswar
+September 2026 – Present
+● Selected as a Full Stack Developer Intern in the Tech Team, building production web modules across client and server layers
+● Working on full-stack feature delivery across a 3-month initial internship period, reporting into the Tech Head, Tridip Maharana
+● Following company coding standards, source-code confidentiality policies, and structured performance reviews
+
 MERN Stack Developer Intern — Vidyavistara Institute, Bhubaneswar
-January 2026 – Present
-● Building full-stack web applications with React.js frontends integrated to Express.js/Node.js REST APIs and MongoDB data models
-● Collaborating with a team on real-world project modules using Git for version control and Agile-style task tracking
-● Debugging and resolving issues across frontend, backend, and database layers to improve application reliability
+January 2026 – August 2026
+● Built full-stack web applications with React.js frontends integrated to Express.js/Node.js REST APIs and MongoDB data models
+● Collaborated with a team on real-world project modules using Git for version control and Agile-style task tracking
+● Debugged and resolved issues across frontend, backend, and database layers to improve application reliability
 
 PROJECTS
 Library Management System | MERN Stack | GitHub Repo
@@ -71,7 +77,7 @@ Banking Website (Front-End Simulation) | HTML, CSS, JavaScript | GitHub Repo
 
 EDUCATION
 Bachelor of Technology (B.Tech), Computer Science — NM Institute of Engineering and Technology, Bhubaneswar
-2023 – 2027 (Ongoing) | CGPA: 7.85 (up to 5th Semester)
+2023 – 2027 (Ongoing) | CGPA: 7.85 (up to 6th Semester)
 12th (Science) — Godavarish Higher Secondary School, Banpur | 2021–2023 | 65%
 10th — Godavarish Vidyapitha, Banpur | 2020–2021 | 73%
 
@@ -195,7 +201,7 @@ English (Professional), Hindi (Professional), Odia (Native)`;
               PROFESSIONAL SUMMARY
             </h2>
             <p className="text-neutral-300 leading-relaxed text-xs sm:text-sm">
-              Full Stack Developer with hands-on MERN stack experience (MongoDB, Express.js, React.js, Node.js) gained through a live internship and three end-to-end projects. Comfortable across the full request/response cycle — building responsive React interfaces, designing RESTful APIs in Express, and modeling data in MongoDB. Familiar with Git-based version control. Seeking a Junior/Fresher Full Stack Developer role to contribute production-ready code from day one.
+              Full Stack Developer with hands-on MERN stack experience (MongoDB, Express.js, React.js, Node.js) gained through two software engineering internships and three end-to-end projects. Comfortable across the full request/response cycle — building responsive React interfaces, designing RESTful APIs in Express, and modeling data in MongoDB. Familiar with Git-based version control. Seeking a Junior/Fresher Full Stack Developer role to contribute production-ready code from day one.
             </p>
           </div>
 
@@ -241,24 +247,46 @@ English (Professional), Hindi (Professional), Odia (Native)`;
             <h2 className="text-xs uppercase tracking-wider font-bold text-neutral-100 border-b border-neutral-800 pb-1 mb-2 font-mono">
               INTERNSHIP EXPERIENCE
             </h2>
-            <div>
-              <div className="flex flex-wrap items-baseline justify-between gap-1">
-                <span className="font-bold text-neutral-100 text-xs sm:text-sm">
-                  MERN Stack Developer Intern — Vidyavistara Institute, Bhubaneswar
-                </span>
-                <span className="text-xs font-mono text-neutral-400">January 2026 – Present</span>
+            <div className="space-y-4">
+              <div>
+                <div className="flex flex-wrap items-baseline justify-between gap-1">
+                  <span className="font-bold text-neutral-100 text-xs sm:text-sm">
+                    Full Stack Developer Intern — Evatril Private Limited, Bhubaneswar
+                  </span>
+                  <span className="text-xs font-mono text-neutral-400">September 2026 – Present</span>
+                </div>
+                <ul className="list-disc list-outside pl-4 mt-2 space-y-1 text-xs text-neutral-300">
+                  <li>
+                    Selected as a Full Stack Developer Intern in the Tech Team, building production web modules across client and server layers
+                  </li>
+                  <li>
+                    Working on full-stack feature delivery across a 3-month initial internship period, reporting into the Tech Head, Tridip Maharana
+                  </li>
+                  <li>
+                    Following company coding standards, source-code confidentiality policies, and structured performance reviews
+                  </li>
+                </ul>
               </div>
-              <ul className="list-disc list-outside pl-4 mt-2 space-y-1 text-xs text-neutral-300">
-                <li>
-                  Building full-stack web applications with React.js frontends integrated to Express.js/Node.js REST APIs and MongoDB data models
-                </li>
-                <li>
-                  Collaborating with a team on real-world project modules using Git for version control and Agile-style task tracking
-                </li>
-                <li>
-                  Debugging and resolving issues across frontend, backend, and database layers to improve application reliability
-                </li>
-              </ul>
+
+              <div>
+                <div className="flex flex-wrap items-baseline justify-between gap-1">
+                  <span className="font-bold text-neutral-100 text-xs sm:text-sm">
+                    MERN Stack Developer Intern — Vidyavistara Institute, Bhubaneswar
+                  </span>
+                  <span className="text-xs font-mono text-neutral-400">January 2026 – August 2026</span>
+                </div>
+                <ul className="list-disc list-outside pl-4 mt-2 space-y-1 text-xs text-neutral-300">
+                  <li>
+                    Built full-stack web applications with React.js frontends integrated to Express.js/Node.js REST APIs and MongoDB data models
+                  </li>
+                  <li>
+                    Collaborated with a team on real-world project modules using Git for version control and Agile-style task tracking
+                  </li>
+                  <li>
+                    Debugged and resolved issues across frontend, backend, and database layers to improve application reliability
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
 
@@ -358,7 +386,7 @@ English (Professional), Hindi (Professional), Odia (Native)`;
                 <span className="font-bold text-neutral-100">
                   Bachelor of Technology (B.Tech), Computer Science — NM Institute of Engineering and Technology, Bhubaneswar
                 </span>
-                <span className="font-mono text-neutral-400">2023 – 2027 (Ongoing) | CGPA: 7.85 (up to 5th Semester)</span>
+                <span className="font-mono text-neutral-400">2023 – 2027 (Ongoing) | CGPA: 7.85 (up to 6th Semester)</span>
               </div>
               <div className="flex flex-wrap items-baseline justify-between gap-1">
                 <span className="text-neutral-300">

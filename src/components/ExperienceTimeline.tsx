@@ -10,6 +10,9 @@ import {
   Sparkles,
   GitBranch,
   Award,
+  History,
+  FileText,
+  ExternalLink,
 } from 'lucide-react';
 
 export const ExperienceTimeline: React.FC = () => {
@@ -25,10 +28,10 @@ export const ExperienceTimeline: React.FC = () => {
                 Industry Experience
               </div>
               <h2 className="text-2xl sm:text-3xl font-extrabold text-neutral-100 tracking-tight">
-                Live Internship & Practical Work
+                Live Internships & Practical Work
               </h2>
               <p className="text-xs sm:text-sm text-neutral-400 mt-1">
-                Collaborating in engineering teams, resolving full-stack issues, and shipping production-ready web modules.
+                {EXPERIENCES.length} software engineering internships across full-stack teams — shipping production-ready web modules and resolving real engineering issues.
               </p>
             </div>
 
@@ -36,14 +39,24 @@ export const ExperienceTimeline: React.FC = () => {
               {EXPERIENCES.map((exp) => (
                 <div
                   key={exp.id}
-                  className="bg-neutral-900/80 border border-neutral-800 rounded-2xl p-6 relative overflow-hidden shadow-xl hover:border-emerald-500/40 transition-all"
+                  className={`bg-neutral-900/80 border rounded-2xl p-6 relative overflow-hidden shadow-xl transition-all ${
+                    exp.current ? 'border-emerald-500/40 hover:border-emerald-500/70' : 'border-neutral-800 hover:border-neutral-700'
+                  }`}
                 >
-                  {/* Active Indicator Top Tag */}
+                  {/* Status + Period Header */}
                   <div className="flex flex-wrap items-center justify-between gap-2 mb-4">
                     <div className="flex items-center gap-2">
-                      <span className="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse" />
-                      <span className="text-xs font-bold text-emerald-400 font-mono uppercase tracking-wider">
-                        Active Role (Current)
+                      <span
+                        className={`w-2.5 h-2.5 rounded-full ${
+                          exp.current ? 'bg-emerald-400 animate-pulse' : 'bg-neutral-600'
+                        }`}
+                      />
+                      <span
+                        className={`text-xs font-bold font-mono uppercase tracking-wider ${
+                          exp.current ? 'text-emerald-400' : 'text-neutral-500'
+                        }`}
+                      >
+                        {exp.current ? 'Active Role (Current)' : exp.type || 'Completed'}
                       </span>
                     </div>
 
@@ -73,7 +86,7 @@ export const ExperienceTimeline: React.FC = () => {
                     ))}
                   </div>
 
-                  {/* Skills tags */}
+                  {/* Skills tags + Offer Letter */}
                   <div className="mt-6 pt-4 border-t border-neutral-800/80 flex flex-wrap items-center gap-1.5">
                     <span className="text-[11px] font-mono text-neutral-500 mr-1">Stack Applied:</span>
                     {exp.skills.map((s) => (
@@ -84,6 +97,19 @@ export const ExperienceTimeline: React.FC = () => {
                         {s}
                       </span>
                     ))}
+
+                    {exp.offerLetterUrl && (
+                      <a
+                        href={exp.offerLetterUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="ml-auto inline-flex items-center gap-1.5 text-[11px] font-mono px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-300 border border-emerald-500/30 hover:bg-emerald-500/20 transition-colors"
+                      >
+                        <FileText className="w-3.5 h-3.5" />
+                        View Offer Letter
+                        <ExternalLink className="w-3 h-3" />
+                      </a>
+                    )}
                   </div>
                 </div>
               ))}

@@ -217,11 +217,11 @@ nothing to commit, working tree clean`,
             <div className="flex flex-wrap items-center gap-2.5 text-xs text-neutral-400">
               <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-neutral-900/70 border border-neutral-800">
                 <GraduationCap className="w-3.5 h-3.5 text-cyan-400" />
-                <span>B.Tech CSE • CGPA 7.85</span>
+                <span>B.Tech CSE • CGPA 7.85 (6th Sem)</span>
               </div>
               <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-neutral-900/70 border border-neutral-800">
                 <Briefcase className="w-3.5 h-3.5 text-amber-400" />
-                <span>Intern @ Vidyavistara Institute (Jan 2026)</span>
+                <span>Intern @ Evatril Pvt Ltd (Sep 2026)</span>
               </div>
               <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-neutral-900/70 border border-neutral-800">
                 <ShieldCheck className="w-3.5 h-3.5 text-emerald-400" />
@@ -304,8 +304,8 @@ nothing to commit, working tree clean`,
             {/* Quick Metrics Bento Bar */}
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-4 border-t border-neutral-900">
               <div className="p-3 rounded-xl bg-neutral-900/60 border border-neutral-800/80 backdrop-blur-sm">
-                <div className="text-xl font-bold font-mono text-emerald-400">Jan 2026</div>
-                <div className="text-[11px] text-neutral-400">Live Active Internship</div>
+                <div className="text-xl font-bold font-mono text-emerald-400">2</div>
+                <div className="text-[11px] text-neutral-400">Engineering Internships</div>
               </div>
               <div className="p-3 rounded-xl bg-neutral-900/60 border border-neutral-800/80 backdrop-blur-sm">
                 <div className="text-xl font-bold font-mono text-cyan-400">3</div>
@@ -313,7 +313,7 @@ nothing to commit, working tree clean`,
               </div>
               <div className="p-3 rounded-xl bg-neutral-900/60 border border-neutral-800/80 backdrop-blur-sm">
                 <div className="text-xl font-bold font-mono text-amber-400">7.85</div>
-                <div className="text-[11px] text-neutral-400">B.Tech CS CGPA</div>
+                <div className="text-[11px] text-neutral-400">B.Tech CSE CGPA</div>
               </div>
               <div className="p-3 rounded-xl bg-neutral-900/60 border border-neutral-800/80 backdrop-blur-sm">
                 <div className="text-xl font-bold font-mono text-neutral-200">Day 1</div>

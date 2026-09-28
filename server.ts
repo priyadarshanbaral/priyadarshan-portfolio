@@ -244,13 +244,17 @@ FEATURED PROJECTS:
    - Accessible digital banking portal with balance monitoring, transfer limits validation, and debit card security freeze state toggle.
 
 EXPERIENCE:
-- MERN Stack Developer Intern at Vidyavistara Institute (January 2026 – Present, Bhubaneswar, Odisha):
-  - Builds full-stack applications with React.js frontends and Express/Node.js REST APIs with MongoDB data models.
+- Full Stack Developer Intern at Evatril Private Limited (September 2026 – Present, Bhubaneswar, Odisha):
+  - Selected into the Tech Team as a Full Stack Developer Intern; builds production web modules across client and server layers.
+  - Works within a 3-month initial internship period reporting to the Tech Head, Tridip Maharana, following company coding standards, source-code confidentiality policies, and structured performance reviews.
+- MERN Stack Developer Intern at Vidyavistara Institute (January 2026 – August 2026, Bhubaneswar, Odisha):
+  - Built full-stack applications with React.js frontends and Express/Node.js REST APIs with MongoDB data models.
+  - Collaborated via Git version control and Agile-style task tracking.
   - Collaborates using Git version control and Agile task workflows.
   - Debugs frontend and backend issues to enhance production reliability.
 
 EDUCATION:
-- B.Tech in Computer Science: NM Institute of Engineering and Technology, Bhubaneswar (2023 – 2027 Ongoing, CGPA: 7.85 up to 5th semester).
+- B.Tech in Computer Science: NM Institute of Engineering and Technology, Bhubaneswar (2023 – 2027 Ongoing, CGPA: 7.85 up to 6th semester).
 - 12th Science: Godavarish Higher Secondary School, Banpur (2021 – 2023, 65%).
 - 10th Matriculation: Godavarish Vidyapitha, Banpur (2020 – 2021, 73%).
 
@@ -272,7 +276,7 @@ function getContextualFallback(userQuery: string): { reply: string; suggestions:
 
   if (q.includes("fit") || q.includes("why hire") || q.includes("strength") || q.includes("evaluat") || q.includes("recommend")) {
     return {
-      reply: "### Why Priyadarshan is an Outstanding Candidate:\n\n• **End-to-End MERN Mastery:** Proven hands-on capability building full-stack applications with React, Node.js, Express, and MongoDB.\n• **Active Internship Experience:** Currently contributing as a MERN Stack Developer Intern at Vidyavistara Institute, following production Git workflows and Agile sprints.\n• **Strong CS Fundamentals:** 7.85 CGPA in B.Tech Computer Science with IBM SkillsBuild AI and MyAnatomy DSA certifications.\n• **Immediate Joiner:** Ready to join immediately with zero notice period for junior/fresher roles.",
+      reply: "### Why Priyadarshan is an Outstanding Candidate:\n\n• **End-to-End MERN Mastery:** Proven hands-on capability building full-stack applications with React, Node.js, Express, and MongoDB.\n• **Two Engineering Internships:** Currently a Full Stack Developer Intern at Evatril Private Limited, following a MERN Stack internship at Vidyavistara Institute with production Git workflows and Agile sprints.\n• **Strong CS Fundamentals:** 7.85 CGPA in B.Tech Computer Science (up to 6th semester) with IBM SkillsBuild AI and MyAnatomy DSA certifications.\n• **Immediate Joiner:** Ready to join immediately with zero notice period for junior/fresher roles.",
       suggestions: ["What projects has he built?", "What are his interview topics?", "How do I contact him?"],
     };
   }
@@ -298,16 +302,16 @@ function getContextualFallback(userQuery: string): { reply: string; suggestions:
     };
   }
 
-  if (q.includes("experience") || q.includes("intern") || q.includes("work") || q.includes("company") || q.includes("vidyavistara")) {
+  if (q.includes("experience") || q.includes("intern") || q.includes("work") || q.includes("company") || q.includes("evatril") || q.includes("vidyavistara")) {
     return {
-      reply: "Priyadarshan is currently working as a **MERN Stack Developer Intern at Vidyavistara Institute** (January 2026 – Present) in Bhubaneswar. He develops full-stack features connecting React frontends with Node/Express REST APIs and MongoDB, collaborating via Git in Agile sprint cycles.",
+      reply: "Priyadarshan is currently a **Full Stack Developer Intern at Evatril Private Limited** (September 2026 – Present) in Bhubaneswar, where he was selected into the Tech Team and builds production web modules across client and server layers. He previously completed a **MERN Stack Developer Internship at Vidyavistara Institute** (January 2026 – August 2026), developing full-stack features with React, Node/Express REST APIs, and MongoDB while collaborating via Git in Agile cycles.",
       suggestions: ["What are his top skills?", "View his education", "Schedule an interview"],
     };
   }
 
   if (q.includes("education") || q.includes("college") || q.includes("degree") || q.includes("btech") || q.includes("cgpa")) {
     return {
-      reply: "Priyadarshan is pursuing his **B.Tech in Computer Science** at **NM Institute of Engineering and Technology**, Bhubaneswar (2023 – 2027), holding a solid **CGPA of 7.85** (up to 5th semester). Prior to this, he completed his 12th Science at Godavarish Higher Secondary School (65%).",
+      reply: "Priyadarshan is pursuing his **B.Tech in Computer Science** at **NM Institute of Engineering and Technology**, Bhubaneswar (2023 – 2027), holding a solid **CGPA of 7.85** (up to 6th semester). Prior to this, he completed his 12th Science at Godavarish Higher Secondary School (65%).",
       suggestions: ["What projects has he built?", "What are his certifications?", "Is he an immediate joiner?"],
     };
   }

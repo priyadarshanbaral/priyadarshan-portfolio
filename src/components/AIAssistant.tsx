@@ -48,7 +48,7 @@ const RECRUITER_PROMPTS = [
   },
   {
     label: '🏢 Internship Experience',
-    query: 'What did Priyadarshan accomplish during his MERN Stack internship at Vidyavistara Institute?',
+    query: 'What did Priyadarshan accomplish during his Full Stack internship at Evatril Private Limited?',
   },
   {
     label: '🧠 Tech Interview Questions',
@@ -79,7 +79,7 @@ export const AIAssistant: React.FC<{ onOpenResume?: () => void }> = ({ onOpenRes
     {
       id: 'welcome-1',
       role: 'assistant',
-      text: `👋 Greetings! I am Priyadarshan's **Advanced AI Career Concierge**, powered by Google **Gemini**.\n\nPriyadarshan is an **Immediate Joiner** specializing in the **MERN Stack** (React.js, Node.js, Express.js, MongoDB) with live full-stack projects and internship experience.\n\nHow can I help you evaluate his profile today? You can select a quick prompt below or type any technical question!`,
+      text: `👋 Greetings! I am Priyadarshan's **Advanced AI Career Concierge**, powered by Google **Gemini**.\n\nPriyadarshan is an **Immediate Joiner** specializing in the **MERN Stack** (React.js, Node.js, Express.js, MongoDB) with live full-stack projects and two engineering internships at Evatril Private Limited and Vidyavistara Institute.\n\nHow can I help you evaluate his profile today? You can select a quick prompt below or type any technical question!`,
       timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),
       suggestions: [
         'Why should we hire him?',
@@ -188,7 +188,7 @@ export const AIAssistant: React.FC<{ onOpenResume?: () => void }> = ({ onOpenRes
       const fallbackMsg: Message = {
         id: `fallback-${Date.now()}`,
         role: 'assistant',
-        text: `### Priyadarshan Baral — Quick Profile Summary\n\n• **Core Stack:** React.js, Node.js, Express.js, MongoDB, JavaScript ES6+, Tailwind CSS.\n• **Immediate Joiner:** Actively available with **zero notice period** for junior/fresher Full Stack roles.\n• **Internship:** MERN Stack Developer Intern at Vidyavistara Institute.\n• **Direct Contact:** [priyadrshanbaral@gmail.com](mailto:priyadrshanbaral@gmail.com) | +91 89840 54385.`,
+        text: `### Priyadarshan Baral — Quick Profile Summary\n\n• **Core Stack:** React.js, Node.js, Express.js, MongoDB, JavaScript ES6+, Tailwind CSS.\n• **Immediate Joiner:** Actively available with **zero notice period** for junior/fresher Full Stack roles.\n• **Internships:** Full Stack Developer Intern at Evatril Private Limited (Sep 2026 – Present); MERN Stack Developer Intern at Vidyavistara Institute (Jan – Aug 2026).\n• **Direct Contact:** [priyadrshanbaral@gmail.com](mailto:priyadrshanbaral@gmail.com) | +91 89840 54385.`,
         timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),
         suggestions: ['Show me his projects', 'What is his education?', 'Schedule an interview'],
         engine: 'Offline Knowledge Engine',
