@@ -1,11 +1,15 @@
 import express from "express";
 import path from "path";
 import fs from "fs";
-import { createServer as createViteServer } from "vite";
 import mongoose from "mongoose";
 import nodemailer from "nodemailer";
 import dotenv from "dotenv";
 import { GoogleGenAI } from "@google/genai";
+// NOTE: "vite" is intentionally NOT imported at the top level. Importing it
+// statically drags the whole Vite/Rolldown toolchain (and its platform-specific
+// native binaries) into the Vercel serverless bundle, which crashes at runtime
+// with "Cannot find native binding". It is only needed for local dev, so we
+// load it lazily inside startServer() below.
 
 dotenv.config();
 
@@ -603,6 +607,9 @@ async function startServer() {
   }
 
   if (process.env.NODE_ENV !== "production") {
+    // Loaded lazily so the Vite toolchain is never bundled into the
+    // Vercel serverless function.
+    const { createServer: createViteServer } = await import("vite");
     const vite = await createViteServer({
       server: { middlewareMode: true },
       appType: "spa",
