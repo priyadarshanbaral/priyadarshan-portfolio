@@ -590,7 +590,18 @@ app.post("/api/contact", async (req, res) => {
 // -------------------------------------------------------------
 // Vite Middleware & SPA Static Serving
 // -------------------------------------------------------------
+// On Vercel the Express app is imported as a serverless function, so we must
+// NOT call app.listen() or boot the Vite dev middleware there.
+const isServerless = Boolean(process.env.VERCEL);
+
 async function startServer() {
+  if (isServerless) {
+    // Vercel's Node runtime serves the built static assets itself and
+    // forwards every request to this exported app.
+    console.log("[Vercel] Express app exported as a serverless function.");
+    return;
+  }
+
   if (process.env.NODE_ENV !== "production") {
     const vite = await createViteServer({
       server: { middlewareMode: true },
@@ -611,3 +622,7 @@ async function startServer() {
 }
 
 startServer();
+
+// Vercel serverless entrypoint — the platform imports this module and
+// invokes the exported handler for every incoming request.
+export default app;
